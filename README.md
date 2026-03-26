@@ -6,7 +6,7 @@ Pragmatic workflow for developing and maintaining stores built on off-the-shelf 
 * Pull in Shopify Admin code/template changes (including Theme Store updates)
 * Exclude content and settings from Git
 
-v1.0.0
+**v1.0.0**
 
 ---
 
