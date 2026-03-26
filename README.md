@@ -15,14 +15,15 @@ Pragmatic workflow for developing and maintaining stores built on off-the-shelf 
 Choose a theme from the Shopify Theme Store.
 Note its numeric ID (visible in the URL when previewing or editing).
 
-### 2. Pull in this workflow
+### 2. Pull in the workflow scaffolding
 
 ```bash
 git init
-git remote add workflow [this-repo-url]
+git remote add workflow https://github.com/falloutofatree/shopify-theme-init.git
 git pull workflow main
 git remote remove workflow
 ```
+This pulls in `.gitignore`, `.shopifyignore`, `shopify-theme.toml`, and this README from the workflow repo, then detaches from it.
 
 ### 3. Configure your local environment
 
@@ -36,7 +37,9 @@ theme = "*your-theme-id*"
 
 ### 4. Pull theme files
 
-Install [Shopify CLI](https://shopify.dev/docs/themes/tools/cli) if needed and pull down your theme.
+Install [Shopify CLI](https://shopify.dev/docs/themes/tools/cli) if needed.
+
+Then pull down your theme.
 
 ```bash
 shopify auth login
